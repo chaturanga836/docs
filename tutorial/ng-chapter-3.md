@@ -204,6 +204,8 @@ Let’s start by creating a simple model object to store user data. Open `app/sh
 export class User {
   email: string;
   password: string;
+  constructor() { 
+  }
 }
 ```
 
@@ -372,6 +374,8 @@ submit() {
 login() {
   // TODO: Define
 }
+
+
 signUp() {
   this.userService.register(this.user);
 }
